@@ -1,9 +1,23 @@
-.imgTemoignages,
+
 .imgActivites {
     width: 25%;
     height: 30%;
     margin-left: 450px;
     margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+.imgTemoignages {
+    width:15%;
+    height: 30%;
+    margin-left: 450px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 3px;
+    display: flex;
+}
+.titreTemoignages, .paragrapheTemoignages{
+    display: flex;
 }
 
 h1 {

@@ -17,7 +17,10 @@ fetch(escapeGamer)
       header.appendChild(deuxTitre);
 
       const buttom = document.createElement("button");
-      buttom.setAttribute('id');
+      buttom.setAttribute('id', 'formulaire');
+      buttom.addEventListener('click', function (event){
+         window.location.href ="form.html";
+      });
       buttom.textContent = `${data.entreprise.texteAppelAction}`;
       header.appendChild(buttom);
 
@@ -71,9 +74,11 @@ fetch(escapeGamer)
          listeTemoignages.appendChild(titrePrenom);
 
          const titreTemoignages = document.createElement('h3');
+         titreTemoignages.classList.add('titreTemoignages');
          titreTemoignages.textContent = `${index.typeExperience} `;
 
          const paragrapheTemoignages = document.createElement('p');
+         paragrapheTemoignages.classList.add('paragrapheTemoignages');
          paragrapheTemoignages.textContent = `${index.commentaire} `;
          console.log(titreTemoignages);
 
