@@ -95,7 +95,7 @@ fetch(escapeGamer)
       const mapContainer = document.createElement('div');
       mapContainer.setAttribute('id', 'mapId');
       main.appendChild(mapContainer);
-      var map = L.map('mapId').setView([45.750000, 4.850000], 13);
+      var map = L.map('mapId').setView([45.750000, 4.900000], 13);
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
          maxZoom: 19,
          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
